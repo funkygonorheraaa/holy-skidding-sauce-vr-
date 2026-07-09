@@ -41,7 +41,7 @@ getgenv().options = {
     NetlessVelocity = Vector3.new(0,-45,0)
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/sauceVR/main.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/funkygonorheraaa/holy-skidding-sauce-vr-/refs/heads/main/sauceVR-1.0/main.lua"))();
 ```
 
 
@@ -63,5 +63,5 @@ options.TurnAngle = 15         -- Change in angle left/right (degrees)
 options.ChatEnabled = true     -- See chat on your left hand in-game
  options.ChatLocalRange = 70   -- Local chat range
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/sauceVR/extra/ROrilla.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/funkygonorheraaa/holy-skidding-sauce-vr-/refs/heads/main/sauceVR-1.0/extra/ROrilla.lua"))();
 ```
