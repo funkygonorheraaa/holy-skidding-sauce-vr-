@@ -1,7 +1,7 @@
 
 function getModule(module)
     assert(type(module) == "string", "string only")
-    local path = "https://raw.githubusercontent.com/funkygonorheraaa/holy-skidding-sauce-vr-/"
+    local path = "https://raw.githubusercontent.com/funkygonorheraaa/holy-skidding-sauce-vr-/main/modules/"
     local module =  loadstring(game:HttpGetAsync(path.. module.. ".lua"))()
     return module
 end
