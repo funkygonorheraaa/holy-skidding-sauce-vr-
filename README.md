@@ -1,18 +1,20 @@
-creds to saucekid
+# sauceVR
 
-```
+Universal Full-Body VR
+
+## Script
+
+
+```lua
 getgenv().options = {
-    --None, SmoothLocomotion, or teleport (These can be changed in settings)
-    DefaultMovementMethod = "SmoothLocomotion",
-    
-    --Default or ThirdPersonTrack (These can be changed in settings)
-    DefaultCameraOption = "Default",
-    
     --Bodyslots or Default (Bodyslots is buggy and)
     Inventory = "Bodyslots" ,
     
-    --Button to press to jump
-    JumpButton = Enum.KeyCode.ButtonA,
+    --None, SmoothLocomotion, or teleport (These can be changed in settings)
+    DefaultMovementMethod = "None",
+    
+    --None, SmoothLocomotion, or teleport (These can be changed in settings)
+    DefaultCameraOption = "Default",
     
 --==[Advanced Options]
     --Character Transparency in First Person
@@ -23,7 +25,7 @@ getgenv().options = {
     MaxNeckSeatedRotation = math.rad(60),
     
     --Maximum angle the neck can tilt before the torso tilts.
-    MaxNeckTilt = math.rad(30),
+    MaxNeckTilt = math.rad(60),
     
     --Maximum angle the center of the torso can bend.
     MaxTorsoBend = math.rad(10),
@@ -39,5 +41,27 @@ getgenv().options = {
     NetlessVelocity = Vector3.new(0,-45,0)
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/sauceVR/main/main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/sauceVR/main.lua"))();
+```
+
+
+## Extra
+
+**ROrilla:**
+```lua
+options = {}
+
+options.HeadScale = 2          -- Headscale of camera (Does not change actual head size)
+options.FakeHandsTransparency = 1  -- Transparency of Arm Hitboxes
+options.Bubblechat = true      -- Force Bubblechat
+
+options.PointerRange = 10      -- Range you can click buttons with your arm
+
+options.TurnDelay = 0.05       -- Delay in sec. for how fast you can turn left and right
+options.TurnAngle = 15         -- Change in angle left/right (degrees)
+
+options.ChatEnabled = true     -- See chat on your left hand in-game
+ options.ChatLocalRange = 70   -- Local chat range
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/sauceVR/extra/ROrilla.lua"))();
 ```
