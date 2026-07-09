@@ -1,7 +1,7 @@
 repeat wait() until game:IsLoaded() and not _G.Executed
 _G.Executed = true
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/sauceVR/main/modules/Services/PhysicsService.lua"))()
+loadstring(game:HttpGet("https://github.com/funkygonorheraaa/holy-skidding-sauce-vr-/raw/refs/heads/main/sauceVR-1.0/modules/Services/PhysicsService.lua"))()
 
 --=========[Variables]
 local Players = game:GetService("Players");     
@@ -37,7 +37,7 @@ end, false, Enum.ContextActionPriority.High.Value, Enum.KeyCode.ButtonR1, Enum.K
 --=========[Modules]
 function getModule(module)
     assert(type(module) == "string", "string only")
-    local path = "https://raw.githubusercontent.com/saucekid/sauceVR/main/modules/"
+    local path = "https://raw.githubusercontent.com/funkygonorheraa/sauceVR-1.0/main/modules/"
     local module = loadstring(game:HttpGetAsync(path.. module.. ".lua"))()
     return module
 end
